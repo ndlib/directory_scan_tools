@@ -1,33 +1,26 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2580
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+# make sure to change config name to compare_config.yml and store in the same
+# directory as the .py script
+# configuration is simple : separated name of parameter : value of parameter
+# note that there are no spaces between the :
+# input one and two indicates the files you want to compare
 
-\f0\fs24 \cf0 # make sure to change config name to compare_config.yml and store in the same\
-# directory as the .py script\
-# configuration is simple : separated name of parameter : value of parameter\
-# note that there are no spaces between the :\
-# input one and two indicates the files you want to compare\
-\
-input_one:some/file/path.txt\
-input_two:some/file/path.txt\
-\
-# start dirs are the directories within the files you want to look at\
-# all preceding directories will be ignored\
-\
-start_dir_one:/a/starting/directory\
-start_dir_two:/a/starting/directory\
-\
-# report entries designate the two reports, full match and candidate matches\
-\
-match_report:match_report.txt\
-candidate_report:candidate_report.txt\
-\
-# certainty percentage is percentage difference between file characteristics\
-# that would mark something as a candidate, the percentage is calculated\
-# 100% - certainty offset\
-# 0 would be 100% certain, where as 4 would be 96% certain\
-\
+input_one:some/file/path.txt
+input_two:some/file/path.txt
+
+# start dirs are the directories within the files you want to look at
+# all preceding directories will be ignored
+
+start_dir_one:/a/starting/directory
+start_dir_two:/a/starting/directory
+
+# report entries designate the two reports, full match and candidate matches
+
+match_report:match_report.txt
+candidate_report:candidate_report.txt
+
+# certainty percentage is percentage difference between file characteristics
+# that would mark something as a candidate, the percentage is calculated
+# 100% - certainty offset
+# 0 would be 100% certain, where as 4 would be 96% certain
+
 certainty_offset:4}
