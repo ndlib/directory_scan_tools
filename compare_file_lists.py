@@ -76,7 +76,7 @@ def config (filename):
 
         # validate configuration
 
-        config_required = ["input_one", "input_two", "start_dir_one", "start_dir_two", "match_report", "candidate_report", "certainty_offset"]
+        config_required = ["input_one", "input_two", "start_dir_one", "start_dir_two", "match_report", "certainty_offset"]
         error = ""
 
         for item in config_required:
@@ -102,7 +102,7 @@ i = 0
 
 input_files = {"one":conf["input_one"], "two":conf["input_two"]}
 start_dirs = {"one":conf["start_dir_one"], "two":conf["start_dir_two"]}
-output_file = {"rpt_m":conf["match_report"], "rpt_c":conf["candidate_report"]}
+output_file = {"rpt_m":conf["match_report"]}
 certainty_adjustment = int(conf["certainty_offset"])
 
 

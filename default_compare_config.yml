@@ -16,11 +16,9 @@ start_dir_two:/a/starting/directory
 # report entries designate the two reports, full match and candidate matches
 
 match_report:match_report.txt
-candidate_report:candidate_report.txt
 
 # certainty percentage is percentage difference between file characteristics
-# that would mark something as a candidate, the percentage is calculated
-# 100% - certainty offset
-# 0 would be 100% certain, where as 4 would be 96% certain
+# that would mark something as a candidate
+# 100 would be 100% certain, where as 96 would be 96% certain
 
-certainty_offset:4}
+certainty_offset:96
