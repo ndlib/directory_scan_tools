@@ -220,8 +220,8 @@ for keys in file_groups:
 				directory_list[keys][parent_path] = {"metadata":{'full_path':parent_path, 'abbreviated_path':parent_abbrev_dir,'directory_name':parent_dname, 'parent':grandparent_dname, 'number_of_files':0, 'directory_size':0}, "directories":[]}
 
 
-			#if "directories" not in directory_list[keys][parent_path].keys():
-			#	directory_list[keys][parent_path]["directories"] = []
+			# if "directories" not in directory_list[keys][parent_path].keys():
+			# directory_list[keys][parent_path]["directories"] = []
 
 			if dname not in directory_list[keys][parent_path]["directories"]:
 				directory_list[keys][parent_path]["directories"].append(dname)
@@ -253,8 +253,6 @@ for keys in file_groups:
 rpt_m = open(output_file["rpt_m"], "w", encoding='utf-8-sig')
 rpt_m.write("Match Status\tDirectory One\tDirectory Two\t# of Files\tSize of Directory (in bytes)\tPercent File Name Matches\tPercent File Size Matches\tDirectory Count\tDirectory Name Matches\n")
 
-rpt_c = open(output_file["rpt_c"], "w", encoding='utf-8-sig')
-rpt_c.write("Match Status\tDirectory One\tDirectory Two\t# of Files\tSize of Directory (in bytes)\tPercent File Name Matches\tPercent File Size Matches\tDirectory Count\tDirectory Name Matches\n")
 
 dir_exact_matches = 0
 dir_candidate_matches = 0
