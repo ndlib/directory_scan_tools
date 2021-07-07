@@ -5,9 +5,11 @@
 ### Purpose
 compare_file_lists.py takes two standardized tab delimited file of file information
 
-file path | filename | file size | file checksum | file modified time
+The input files must contain the following:
 
-file checksum and file modified time can be blank and are not currently used for comparisons
+> file path | filename | file size | file checksum | file modified time
+
+_Note: file checksum and file modified time can be blank and are not currently used for comparisons._
 
 It then groups the list of files into a list of directories and metadata:
   1. Name of Directory
@@ -33,7 +35,8 @@ To determine whether a directory is a match to another directory, the program us
 **Note: The comparison is one direction.  The program checks for matches to input file one.  If you want to check the other direction, simply switch the file paths.**
 
 ### Configuration
-The configuration file is called compare_config.yml and is in basic yaml syntax
+The configuration file is called compare_config.yml and is in basic yaml syntax:
+
 ```
 name:value
 ```
@@ -64,3 +67,27 @@ certainty_offset:96
 ```
 
 ### Usage
+
+Usage is simple.  The program has no external dependencies, however you must be running Python 3.8 or above.
+
+Make sure your compare_config.yml is completed and in the same directory as the compare_file_lists.py
+
+> $ python compare_file_lists.py
+
+## directory_contents.py
+
+### Purpose
+
+This program prompts you for a directory path to scan, scans that directory for files, and places them in a tab delimited list formatted specifically for compare_directory_lists.py
+
+The format is:
+
+> file path | filename | file size | file checksum | file modified time
+
+### Usage
+
+This program also has no external dependencies, but requires Python 3.8 or above.
+
+> $ python directory_contents.py
+
+
