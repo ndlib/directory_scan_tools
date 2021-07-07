@@ -1,3 +1,5 @@
+# Copyright 2021, University of Notre dname
+
 import os
 import datetime
 

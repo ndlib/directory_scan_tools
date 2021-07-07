@@ -1,3 +1,5 @@
+# Copyright 2021, University of Notre dname
+
 # this program compares two lists of files
 # the input format for file is file path \t filename \t filesize \t checksum \t modified time stamp
 # first we need to group directories and files

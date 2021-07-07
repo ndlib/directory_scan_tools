@@ -1,3 +1,5 @@
+# Copyright 2021, University of Notre dname
+
 import csv
 import os
 
@@ -34,6 +36,5 @@ with open(input_file, "r", encoding='utf-8-sig', newline='') as file:
 
 
         # output formatted tab delimited
-        
-        output_fh.write(f_path + "\t" + f_name + "\t" + f_size + "\t" + f_cs + "\t" + "" + "\n")
 
+        output_fh.write(f_path + "\t" + f_name + "\t" + f_size + "\t" + f_cs + "\t" + "" + "\n")
