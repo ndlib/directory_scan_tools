@@ -90,4 +90,24 @@ This program also has no external dependencies, but requires Python 3.8 or above
 
 > $ python directory_contents.py
 
+> Enter the full path to the directory you want to scan: /some/directory/path
+> Enter some letters that will be pre-appended to the output file names: abc _this will be pre-appended to a string _files.txt_
+> Specify any file extensions (include the .) you would like to filter by separated by a space (leave it blank if you don't want to filter): .jpg .html .mov
 
+This will produce a well-formatted tab delimited file with the name abc_files.txt
+
+## dternity_index_to_tabdel.py
+
+### Purpose
+
+This program takes an input file created by the dternity file gateway software and creates a file that is formatted for compare_file_lists.py
+
+## Usage
+
+This program also has no external dependencies, but requires Python 3.8 or above.
+
+> $ python dternity_index_to_tabdel.py
+
+> Enter the file you want to transform: /some/file/on/your/system.txt
+
+The program will create an output file called system_tab.txt
